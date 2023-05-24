@@ -18,6 +18,11 @@ import org.springframework.context.annotation.ComponentScan;
 public class Application {
 
     public static void main(String[] args) {
+        /** 스프링부트는 웹서버가 아니고
+         *  내장 서블릿 컨테이너 스프링프레임워크를 쉽게 사용할 수 있게 해주는 일종의 툴
+         *    - 서버 : 톰캣, 네티, 제, 언더토
+         *  아래 코드는 웹 애플리케이션 없이 가동
+         */
         // SpringApplication.run(SpringBootGettingStartedApplication.class, args);
         SpringApplication application = new SpringApplication(Application.class);
         application.setWebApplicationType(WebApplicationType.NONE);
